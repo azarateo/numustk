@@ -65,10 +65,10 @@
             </objects>
             <point key="canvasLocation" x="1397" y="81"/>
         </scene>
-        <!--Table View Controller - Numusteka-->
+        <!--Main View Controller - Numusteka-->
         <scene sceneID="3p2-sY-oKt">
             <objects>
-                <tableViewController id="0S0-l6-KN4" sceneMemberID="viewController">
+                <tableViewController id="0S0-l6-KN4" customClass="MainViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="pwO-GE-iwb">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -197,10 +197,6 @@
                                 </cells>
                             </tableViewSection>
                         </sections>
-                        <connections>
-                            <outlet property="dataSource" destination="0S0-l6-KN4" id="tc1-JB-Zgc"/>
-                            <outlet property="delegate" destination="0S0-l6-KN4" id="jbQ-KS-cfg"/>
-                        </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Numusteka" prompt="Encuentra el billete que necesitas" id="ShN-IG-GQu"/>
                 </tableViewController>

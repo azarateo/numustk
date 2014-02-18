@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>74D16E6D-45D6-45BC-9204-B548913480F8</string>
+	<key>IDESourceControlProjectName</key>
+	<string>numustk</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>3B6D2096-EB7D-4E22-A53E-7D4BC848F89F</key>
+		<string>https://github.com/azarateo/numustk.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>numustk.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>3B6D2096-EB7D-4E22-A53E-7D4BC848F89F</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/azarateo/numustk.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>3B6D2096-EB7D-4E22-A53E-7D4BC848F89F</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>3B6D2096-EB7D-4E22-A53E-7D4BC848F89F</string>
+			<key>IDESourceControlWCCName</key>
+			<string>numustk</string>
+		</dict>
+	</array>
+</dict>
+</plist>
