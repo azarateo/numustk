@@ -10,5 +10,6 @@
 
 @interface MainViewController : UITableViewController <UITableViewDelegate,UITableViewDataSource>
 
+- (IBAction)traerdatos:(id)sender;
 
 @end

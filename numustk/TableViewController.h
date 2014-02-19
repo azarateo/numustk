@@ -11,6 +11,8 @@
 @interface TableViewController : UIViewController <UITableViewDataSource,UITableViewDelegate>
 {
     NSArray *rows;
+    NSMutableArray *objetos;
 }
+@property (weak, nonatomic) IBOutlet UITableView *tabla;
 
 @end

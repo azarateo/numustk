@@ -39,6 +39,11 @@
     
     
     
+    PFInstallation *currentInstallation = [PFInstallation currentInstallation];
+    [currentInstallation addUniqueObject:@"Giants" forKey:@"channels"];
+    [currentInstallation saveInBackground];
+    
+    
     
     [super viewDidLoad];
 }
@@ -49,4 +54,13 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)traerdatos:(id)sender {
+    
+    PFQuery *query = [PFQuery queryWithClassName:@"GameScore"];
+    [query getObjectInBackgroundWithId:@"e1Zt3zIruB" block:^(PFObject *gameScore, NSError *error) {
+        // Do something with the returned PFObject in the gameScore variable.
+        NSLog(@"%@", gameScore);
+    }];
+    
+}
 @end
