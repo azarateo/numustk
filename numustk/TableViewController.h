@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TableViewController : UIViewController <UITableViewDataSource,UITableViewDelegate>
+@interface TableViewController : UITableViewController <UITableViewDataSource,UITableViewDelegate>
 {
     NSArray *rows;
     NSMutableArray *objetos;

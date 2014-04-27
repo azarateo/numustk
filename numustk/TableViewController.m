@@ -8,6 +8,7 @@
 
 #import "TableViewController.h"
 #import <Parse/Parse.h>
+#import "sqlite3.h"
 
 @interface TableViewController ()
 
@@ -70,12 +71,13 @@
     UITableViewCell *celda = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"UITableViewCell"];
     PFObject *eldato = [objetos objectAtIndex:indexPath.row];
     NSString *elnombre = [eldato objectForKey:@"playerName"];
-   // NSString *elmodo = [eldato objectForKey:@"cheatMode"];
+    NSString *elmodo = [eldato objectForKey:@"playerName"];
 
    
     
     
     [[celda textLabel] setText:elnombre];
+    celda.detailTextLabel.text = elmodo;
     return celda;
 
 }

@@ -17,6 +17,7 @@
 		FC3505B318B2E1FB00F971B4 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC3505B218B2E1FB00F971B4 /* Security.framework */; };
 		FC3505B518B2E20600F971B4 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC3505B418B2E20600F971B4 /* StoreKit.framework */; };
 		FC3505B718B2E21B00F971B4 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC3505B618B2E21B00F971B4 /* SystemConfiguration.framework */; };
+		FC4894AD190D526A006E37F2 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC4894AC190D526A006E37F2 /* Parse.framework */; };
 		FC7DA1B118A6C29900FF7A58 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC7DA1B018A6C29900FF7A58 /* Foundation.framework */; };
 		FC7DA1B318A6C29900FF7A58 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC7DA1B218A6C29900FF7A58 /* CoreGraphics.framework */; };
 		FC7DA1B518A6C29900FF7A58 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC7DA1B418A6C29900FF7A58 /* UIKit.framework */; };
@@ -42,7 +43,6 @@
 		FC7DA1F718A6C6A300FF7A58 /* Book Library-256.png in Resources */ = {isa = PBXBuildFile; fileRef = FC7DA1EF18A6C6A300FF7A58 /* Book Library-256.png */; };
 		FC7DA1F918A6C9DA00FF7A58 /* 3D-Book-64.png in Resources */ = {isa = PBXBuildFile; fileRef = FC7DA1F818A6C9DA00FF7A58 /* 3D-Book-64.png */; };
 		FC865AAD18A717AA008531C2 /* ConsultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC865AAB18A717AA008531C2 /* ConsultViewController.m */; };
-		FC865AB018A73044008531C2 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC865AAF18A73044008531C2 /* Parse.framework */; };
 		FCB3912618A9CC5100296A9C /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB3912418A9CC5100296A9C /* TableViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -67,6 +67,7 @@
 		FC3505B218B2E1FB00F971B4 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		FC3505B418B2E20600F971B4 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		FC3505B618B2E21B00F971B4 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		FC4894AC190D526A006E37F2 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = ../../Downloads/Parse.framework; sourceTree = "<group>"; };
 		FC7DA1AD18A6C29900FF7A58 /* numustk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = numustk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC7DA1B018A6C29900FF7A58 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FC7DA1B218A6C29900FF7A58 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -98,7 +99,6 @@
 		FC7DA1F818A6C9DA00FF7A58 /* 3D-Book-64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "3D-Book-64.png"; sourceTree = "<group>"; };
 		FC865AAA18A717AA008531C2 /* ConsultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConsultViewController.h; sourceTree = "<group>"; };
 		FC865AAB18A717AA008531C2 /* ConsultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConsultViewController.m; sourceTree = "<group>"; };
-		FC865AAF18A73044008531C2 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = ../../../../Downloads/Parse.framework; sourceTree = "<group>"; };
 		FCB3912318A9CC5100296A9C /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
 		FCB3912418A9CC5100296A9C /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -108,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC4894AD190D526A006E37F2 /* Parse.framework in Frameworks */,
 				FC3505B718B2E21B00F971B4 /* SystemConfiguration.framework in Frameworks */,
 				FC3505B518B2E20600F971B4 /* StoreKit.framework in Frameworks */,
 				FC3505B318B2E1FB00F971B4 /* Security.framework in Frameworks */,
@@ -119,7 +120,6 @@
 				FC3505A918B2E1AB00F971B4 /* CFNetwork.framework in Frameworks */,
 				FC3505A718B2E19F00F971B4 /* AudioToolbox.framework in Frameworks */,
 				FC3505A318B18F1200F971B4 /* libsqlite3.dylib in Frameworks */,
-				FC865AB018A73044008531C2 /* Parse.framework in Frameworks */,
 				FC7DA1B518A6C29900FF7A58 /* UIKit.framework in Frameworks */,
 				FC7DA1B118A6C29900FF7A58 /* Foundation.framework in Frameworks */,
 			);
@@ -160,6 +160,7 @@
 		FC7DA1AF18A6C29900FF7A58 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FC4894AC190D526A006E37F2 /* Parse.framework */,
 				FC3505B618B2E21B00F971B4 /* SystemConfiguration.framework */,
 				FC3505B418B2E20600F971B4 /* StoreKit.framework */,
 				FC3505B218B2E1FB00F971B4 /* Security.framework */,
@@ -170,7 +171,6 @@
 				FC3505A818B2E1AB00F971B4 /* CFNetwork.framework */,
 				FC3505A618B2E19F00F971B4 /* AudioToolbox.framework */,
 				FC3505A218B18F1200F971B4 /* libsqlite3.dylib */,
-				FC865AAF18A73044008531C2 /* Parse.framework */,
 				FC7DA1B018A6C29900FF7A58 /* Foundation.framework */,
 				FC7DA1B218A6C29900FF7A58 /* CoreGraphics.framework */,
 				FC7DA1B418A6C29900FF7A58 /* UIKit.framework */,
