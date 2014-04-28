@@ -7,11 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "sqlite3.h"
 
 @interface TableViewController : UITableViewController <UITableViewDataSource,UITableViewDelegate>
 {
     NSArray *rows;
     NSMutableArray *objetos;
+    sqlite3 *db;
+
 }
 @property (weak, nonatomic) IBOutlet UITableView *tabla;
 
