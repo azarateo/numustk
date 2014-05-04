@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC1887B71915E8FA00421AEA /* teamo.png in Resources */ = {isa = PBXBuildFile; fileRef = FC1887B61915E8FA00421AEA /* teamo.png */; };
+		FC1887B91915E96600421AEA /* 80x80.png in Resources */ = {isa = PBXBuildFile; fileRef = FC1887B81915E96600421AEA /* 80x80.png */; };
 		FC3505A318B18F1200F971B4 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FC3505A218B18F1200F971B4 /* libsqlite3.dylib */; };
 		FC3505A718B2E19F00F971B4 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC3505A618B2E19F00F971B4 /* AudioToolbox.framework */; };
 		FC3505A918B2E1AB00F971B4 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC3505A818B2E1AB00F971B4 /* CFNetwork.framework */; };
@@ -57,6 +59,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FC1887B61915E8FA00421AEA /* teamo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = teamo.png; sourceTree = "<group>"; };
+		FC1887B81915E96600421AEA /* 80x80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 80x80.png; sourceTree = "<group>"; };
 		FC3505A218B18F1200F971B4 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		FC3505A618B2E19F00F971B4 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		FC3505A818B2E1AB00F971B4 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -231,6 +235,8 @@
 		FC865AB118A73077008531C2 /* icons */ = {
 			isa = PBXGroup;
 			children = (
+				FC1887B61915E8FA00421AEA /* teamo.png */,
+				FC1887B81915E96600421AEA /* 80x80.png */,
 				FC7DA1E818A6C6A300FF7A58 /* Money.ico */,
 				FC7DA1E918A6C6A300FF7A58 /* money_256.png */,
 				FC7DA1EA18A6C6A300FF7A58 /* Event-256.png */,
@@ -325,6 +331,8 @@
 			files = (
 				FC7DA1C718A6C29A00FF7A58 /* Main_iPad.storyboard in Resources */,
 				FC7DA1F618A6C6A300FF7A58 /* Album_128.png in Resources */,
+				FC1887B71915E8FA00421AEA /* teamo.png in Resources */,
+				FC1887B91915E96600421AEA /* 80x80.png in Resources */,
 				FC7DA1CC18A6C29A00FF7A58 /* Images.xcassets in Resources */,
 				FC7DA1F518A6C6A300FF7A58 /* Book-64.png in Resources */,
 				FC7DA1F918A6C9DA00FF7A58 /* 3D-Book-64.png in Resources */,

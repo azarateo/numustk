@@ -55,7 +55,7 @@
     
     
     PFQuery *query = [PFQuery queryWithClassName:@"billeteca2014"];
-    [query whereKey:@"denominacion" equalTo:@"1/2"];
+    [query whereKey:@"denominacion" notEqualTo:@""];
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
         if (!error) {
             // The find succeeded.
