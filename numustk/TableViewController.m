@@ -50,16 +50,7 @@
     }
 
     
-    NSString *consultaInsert = [NSString stringWithFormat:@"INSERT INTO billete(objectId,denominacion,year,month,day,f8_10,f5_7,f1_4,descripcion) VALUES('123','100','1987','enero','21','1000','2000','454','El billete es la locura');"];
-    char *error2;
-    
-    if(sqlite3_exec(db, [consultaInsert UTF8String], NULL, NULL, &error2) != SQLITE_OK){
-        sqlite3_close(db);
-        NSLog(@"No se insertó la fila");
-    }
-    else{
-        NSLog(@"Se insertó la fila");
-    }
+   
 
     
     
@@ -71,13 +62,33 @@
             NSLog(@"Billetes encontrados %lu", (unsigned long)objects.count);
             // Do something with the found objects
             for (PFObject *object in objects) {
-                NSLog(@"%@", object.objectId);
+                
+                //NSLog(@"Objeto resultado %@",object);
+                NSString *objectId = [object objectId] == nil ? @"" : [NSString stringWithString:[object objectId]];
+                NSString *denominacion = [object objectForKey:@"denominacion"] == nil ? @"" : [NSString stringWithString:[object objectForKey:@"denominacion"]];
+                NSString *year = [object objectForKey:@"ano"] == nil ? @"" : [NSString stringWithString:[object objectForKey:@"ano"]];
+                NSString *month = [object objectForKey:@"mes"] == nil ? @"" : [NSString stringWithString:[object objectForKey:@"mes"]];
+                NSString *day = [object objectForKey:@"dia"] == nil ? @"" : [NSString stringWithString:[object objectForKey:@"dia"]];
+                NSString *f8_10 = [object objectForKey:@"f8_10"] == nil ? @"" : [NSString stringWithString:[object objectForKey:@"f8_10"]];
+                NSString *f5_7 = [object objectForKey:@"f5_7"] == nil ? @"" : [NSString stringWithString:[object objectForKey:@"f5_7"]];
+                NSString *f1_4 = [object objectForKey:@"f1_4"] == nil ? @"" : [NSString stringWithString:[object objectForKey:@"f1_4"]];
+                NSString *descripcion = [object objectForKey:@"descripcion"] == nil ? @"" : [NSString stringWithString:[object objectForKey:@"descripcion"]];
+                NSString *consultainsercion = [NSString stringWithFormat:@"INSERT INTO billete(objectId,denominacion,year,month,day,f8_10,f5_7,f1_4,descripcion)VALUES('%@','%@','%@','%@','%@','%@','%@','%@','%@');",objectId,denominacion,year,month,day,f8_10,f5_7,f1_4,descripcion];
+                char *error2;
+                if(sqlite3_exec(db, [consultainsercion UTF8String], NULL, NULL, &error2) != SQLITE_OK){
+                    sqlite3_close(db);
+                    NSLog(@"No se insertó la fila");
+                }
+                else{
+                    NSLog(@"Se insertó la fila");
+                }
+                
             }
             objetos = [NSMutableArray arrayWithArray:objects];
-            NSLog(@"Número de objetos en arreglo objetos: %lu", (unsigned long)objetos.count);
+            //NSLog(@"Número de objetos en arreglo objetos: %lu", (unsigned long)objetos.count);
             
             for (int i = 0; i < objetos.count; i++){
-                NSLog(@"Resultados: %@", [objetos objectAtIndex:i]);
+                //NSLog(@"Resultados: %@", [objetos objectAtIndex:i]);
             }
             
             [tabla reloadData];
